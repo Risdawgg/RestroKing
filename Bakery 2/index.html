@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bakery</title>
+    <link rel="stylesheet" href="small.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- npx tailwindcss -i ./src/index.css -o ./main/style.css --watch -->
+    <header>
+      <nav class="top-nav relative w-full bg-white flex items-center">
+        <div
+          class="top-nav-content flex justify-evenly h-28 w-[90%] m-auto text-xl"
+        >
+          <div class="right flex justify-evenly items-center w-2/5">
+            <!-- Right Contents-->
+
+            <div class="dropdown">
+              <button class="dropbtn">Home</button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <button class="dropbtn">Pages</button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <button class="dropbtn">Our Menu</button>
+              <div class="dropdown-content">
+                <a href="#">Menu Style 1</a>
+                <a href="#">Menu Style 2</a>
+                <a href="#">Menu Style 3</a>
+                <a href="#">Menu Style 4</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="image relative w-[20%]">
+            <div class="image-container w-full absolute -mt-3 top-8 z-10">
+              <img src="/nav.png" alt="restroking" />
+            </div>
+          </div>
+
+          <div class="left flex justify-evenly items-center w-2/5">
+            <div class="dropdown-grid">
+              <button class="dropbtn">Blog</button>
+              <div class="dropdown-content-grid">
+                <div class="lists grid grid-cols-4 justify-items-center">
+                  <ul>
+                    <li class="font-semibold">BloG Grid</li>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                  </ul>
+
+                  <ul>
+                    <li class="font-semibold">BloG Half</li>
+                    <li>Red</li>
+                    <li>Blue</li>
+                    <li>Green</li>
+                  </ul>
+
+                  <ul>
+                    <li class="font-semibold">Blog Large</li>
+                    <li>LALA</li>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                    <li>Black</li>
+                  </ul>
+
+                  <ul>
+                    <li class="font-semibold">Blog Details</li>
+                    <li>Brocolli</li>
+                    <li>Tomato</li>
+                    <li>WAWAWA</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <button class="dropbtn">Shop</button>
+              <div class="dropdown-content">
+                <a href="#">Shop </a>
+                <a href="#">Shop sidebar </a>
+                <a href="#">Product details</a>
+                <a href="#">Cart</a>
+                <a href="#">Wishlist</a>
+                <a href="#">Checkout</a>
+                <a href="#">Login</a>
+                <a href="#">Register</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <button class="dropbtn">Contact</button>
+              <div class="dropdown-content">
+                <a href="#">Contact-Us 2 </a>
+                <a href="#">Contact-Us 2 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- HAMBURGER  -->
+
+      <div class="parent-ham relative z-50">
+        <div class="main-hamburger sticky">
+          <input type="checkbox" id="menu-icon" class="harmburger" />
+          <label for="menu-icon" class="harmburger2">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </label>
+
+          <div class="nav-menu">
+            <div
+              class="hamburger-content grid grid-cols-1 gap-16 overflow-scroll justify-items-center w-[100%]"
+            >
+              <div class="w-44 mt-9">
+                <div class="image 5/12">
+                  <img src="/nav.png" alt="restroking" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 gap-2">
+                <div>
+                  <input type="checkbox" id="accordion-item-2" class="hidden" />
+                  <label for="accordion-item-2" class="cursor-pointer">
+                    <p class="text-[15px] font-bold sm:text-lg">Home</p>
+                  </label>
+                  <div
+                    class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                  >
+                    <div class="w-full">
+                      <div>
+                        <div>Home 1</div>
+                        <div>Home 2</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="accordion-item-5" class="hidden" />
+                  <label for="accordion-item-5" class="cursor-pointer">
+                    <p class="text-[15px] font-bold sm:text-lg">Pages</p>
+                  </label>
+                  <div
+                    class="accordion-content-1 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                  >
+                    <div class="w-full">
+                      <div>
+                        <div>About us</div>
+                        <div>Our services</div>
+                        <div>FAQs</div>
+                        <div>Bookings</div>
+                        <div>404 Error</div>
+                        <div>Calendar</div>
+                        <div>Team</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="accordion-item-4" class="hidden" />
+                  <label for="accordion-item-4" class="cursor-pointer">
+                    <p class="text-[15px] font-bold sm:text-lg">Our Menu</p>
+                  </label>
+                  <div
+                    class="accordion-content-1 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                  >
+                    <div class="w-full">
+                      <div>
+                        <div>Menu 1</div>
+                        <div>Menu 2</div>
+                        <div>Menu 3</div>
+                        <div>Menu 4</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 gap-2">
+                <div>
+                  <input type="checkbox" id="accordion-item-7" class="hidden" />
+                  <label for="accordion-item-7" class="cursor-pointer">
+                    <p class="text-[15px] font-bold sm:text-lg">Blog</p>
+                  </label>
+                  <div
+                    class="accordion-content-1 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                  >
+                    <div class="w-full">
+                      <div>
+                        <ul>
+                          <li class="font-semibold">BloG Grid</li>
+                          <li>Lorem</li>
+                          <li>Lorem</li>
+                          <li>Lorem</li>
+                        </ul>
+
+                        <ul>
+                          <li class="font-semibold">BloG Half</li>
+                          <li>Red</li>
+                          <li>Blue</li>
+                          <li>Green</li>
+                        </ul>
+
+                        <ul>
+                          <li class="font-semibold">Blog Large</li>
+                          <li>LALA</li>
+                          <li>Lorem</li>
+                          <li>Lorem</li>
+                          <li>Black</li>
+                        </ul>
+
+                        <ul>
+                          <li class="font-semibold">Blog Details</li>
+                          <li>Brocolli</li>
+                          <li>Tomato</li>
+                          <li>WAWAWA</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="accordion-item-9" class="hidden" />
+                  <label for="accordion-item-9" class="cursor-pointer">
+                    <p class="text-[15px] font-bold sm:text-lg">Shop</p>
+                  </label>
+                  <div
+                    class="accordion-content-1 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                  >
+                    <div class="w-full">
+                      <div>
+                        <div>Shop</div>
+                        <div>Shop SideBar</div>
+                        <div>Product Details</div>
+                        <div>Cart</div>
+                        <div>Wishlist</div>
+                        <div>Checkout</div>
+                        <div>Login</div>
+                        <div>Register</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    id="accordion-item-10"
+                    class="hidden"
+                  />
+                  <label for="accordion-item-10" class="cursor-pointer">
+                    <p class="text-[15px] font-bold sm:text-lg">Contact Us</p>
+                  </label>
+                  <div
+                    class="accordion-content-1 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                  >
+                    <div class="w-full">
+                      <div>
+                        <div>Contact Us 1</div>
+                        <div>Contact Us 2</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Body  -->
+
+    <div class="background h-auto w-full overflow-hidden">
+      <div class="bg-para w-full h-full text-center text-white mt-52">
+        <h2 class="text-3xl">Cakes and Bakery</h2>
+        <h1 class="text-8xl">Welcome To Bakery</h1>
+        <h2 class="text-3xl font-sans">The Best Cakes In New York</h2>
+        <div class="button flex justify-center mt-10 mb-40">
+          <button
+            class="l2r font-sans bg-cyan-400 text-white p-4 rounded-xl mr-1"
+          >
+            About Us
+          </button>
+          <button class="btn font-sans bg-white text-black p-4 rounded-xl ml-1">
+            Subscribe Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards w-full">
+      <div
+        class="card-group grid grid-cols-1 gap-x-4 gap-y-16 w-full md:grid justify-items-center md:grid-cols-2 lg:flex lg:justify-evenly lg:w[90%] lg:items-center lg: text-center lg:-mt-14 z-10"
+      >
+        <div class="card1" id="ani">
+          <div class="content">
+            <h1>Macarons</h1>
+            <p>Lorem ipsum dolor</p>
+            <button>More Details >></button>
+          </div>
+        </div>
+
+        <div class="card2" id="ani">
+          <div class="content">
+            <h1>Small Cupcakes</h1>
+            <p>Lorem ipsum dolor</p>
+            <button>More Details >></button>
+          </div>
+        </div>
+
+        <div class="card3" id="ani">
+          <div class="content">
+            <h1>Cupcakes</h1>
+            <p>Lorem ipsum dolor</p>
+            <button class="text-white">More Details >></button>
+          </div>
+        </div>
+
+        <div class="card4" id="ani">
+          <div class="content">
+            <h1>Occasion Cakes</h1>
+            <p>Lorem ipsum dolor</p>
+            <button>More Details >></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex w-full h-auto justify-center mt-28">
+      <div class="w-9/12">
+        <div class="flex justify-center">
+          <img src="/cupcake.jpg" alt="" />
+        </div>
+        <h2 class="mt-8 text-center text-sky-400 text-2xl">
+          It’s a party and you’re invited
+        </h2>
+        <h2 class="mt-8 text-center text-2xl font-sans tracking-wider">
+          Join DexignZone <b>Bakery™</b> to earn Gold level benefits like free
+          Cakes and <br />
+          food, get free refills, pay and order with your phone, and more.
+        </h2>
+        <p class="mt-8 text-center font-sans text-lg">
+          Exclusive deals on Cakes, delivered straight to your inbox Join Now
+        </p>
+      </div>
+    </div>
+    <br />
+
+    <!-- Brown cake section -->
+
+    <div class="background3 relative">
+      <div class="background3-main-child relative full">
+        <div class="background3-main-content absolute w-[100%]">
+          <div class="content3 w-[75%] text-white m-auto mt-20">
+            <h2 class="text-center text-5xl">What do we offer you</h2>
+            <p class="font-sans w-[75%] text-center m-auto mt-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s
+            </p>
+          </div>
+
+          <div class="mb-14">
+            <div class="grid md:flex justify-center mt-10">
+              <div class="w-[100%] md:w-[30%]">
+                <img class="w-[100%]" src="/waffels.jpg" alt="" />
+              </div>
+
+              <div
+                class="w-[90] sm:grid grid-cols-2 mt-10 justify-items-center md:flex items-center md:w-[60%] text-white"
+              >
+                <div
+                  class="w-full sm:w-[50%] grid grid-rows-1 gap-10 justify-items-center"
+                >
+                  <div class="grid grid-cols-2">
+                    <div>
+                      <img src="/pancakes.png" alt="" />
+                    </div>
+                    <div class="grid gap-2">
+                      <p class="text-2xl">waffels</p>
+                      <p>Lrem is dummy</p>
+                    </div>
+                  </div>
+
+                  <div class="grid grid-cols-2">
+                    <div>
+                      <img src="/muffin.png" alt="" />
+                    </div>
+                    <div class="grid gap-2">
+                      <p class="text-2xl">Muffin</p>
+                      <p>Lrem is dummy</p>
+                    </div>
+                  </div>
+
+                  <div class="grid grid-cols-2">
+                    <div>
+                      <img src="/quaso.png" alt="" />
+                    </div>
+                    <div class="grid gap-2">
+                      <p class="2xl">Quaso</p>
+                      <p>Lrem is dummy</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="w-full mt-3 sm:w-[50%] grid grid-rows-1 gap-10 justify-items-center"
+                >
+                  <div class="grid grid-cols-2">
+                    <div>
+                      <img src="/quasotea.png" alt="" />
+                    </div>
+                    <div class="grid gap-2">
+                      <p class="2xl">Cake Services</p>
+                      <p>Lrem is dummy</p>
+                    </div>
+                  </div>
+
+                  <div class="grid grid-cols-2">
+                    <div>
+                      <img src="/bcake.png" alt="" />
+                    </div>
+                    <div class="grid gap-2">
+                      <p class="2xl">Birthday Cake</p>
+                      <p>Lrem is dummy</p>
+                    </div>
+                  </div>
+
+                  <div class="grid grid-cols-2">
+                    <div>
+                      <img src="/pancakes.png" alt="" />
+                    </div>
+                    <div class="grid gap-2">
+                      <p class="2xl">waffels</p>
+                      <p>Lrem is dummy</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- sale and delivery section -->
+
+    <div class="sales-delivery relative overflow-hidden">
+      <div class="sales w-full">
+        <div class="sales-main grid md:flex w-[95%] m-auto justify-around">
+          <div class="w-full md:w-2/5 sales-main-child1 mt-16">
+            <div class="content-box1">
+              <h1 class="text-4xl">Sale and Delivery points</h1>
+              <p
+                id="blue"
+                class="mt-5 text-lg font-sans font-semibold text-gray-500 relative"
+              >
+                Where you buy our high quality cake
+              </p>
+              <div class="mt-10">
+                <p class="font-sans">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                  nemo quibusdam velit! Harum, nostrum rem. Tenetur eveniet
+                  animi blanditiis molestiae minus expedita ratione non
+                  accusamus ipsum! Doloribus, illo reiciendis. Alias!
+                </p>
+              </div>
+
+              <div class="mt-5">
+                <p class="font-sans">
+                  First and foremost I am a chef, whether behind the stove at
+                  one of my Northern California restaurants or for the past 15
+                  years in front of the Lorem Ipsum is simply Bakery dummy text
+                  of the printing and typesetting industry. Lorem Ipsum has been
+                  the industry's standard dummy text ever since the 1500s, when
+                  an unknown printer took.
+                </p>
+              </div>
+
+              <div class="mt-5">
+                <p class="font-sans">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Atque quaerat deserunt voluptates debitis doloremque dolores
+                  culpa similique, ducimus libero optio, dolorem iste quod autem
+                  commodi vero? Eveniet voluptas tenetur tempora.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full justify-center ml-0 md:w-2/5 h-auto mt-20">
+            <div class="relative overflow-hidden">
+              <div class="space-y-4">
+                <!-- Accordion Item 1 -->
+                <div>
+                  <input type="checkbox" id="accordion-item-1" class="hidden" />
+                  <label
+                    for="accordion-item-1"
+                    class="flex justify-around cursor-pointer text-lg font-semibold text-white p-4 bg-blue-300 rounded-md"
+                  >
+                    <svg
+                      width="25px"
+                      height="25px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      stroke="#fafafa"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          d="M21 5L19 12H7.37671M20 16H8L6 3H3M16 5.5H13.5M13.5 5.5H11M13.5 5.5V8M13.5 5.5V3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z"
+                          stroke="#fafafa"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                    </svg>
+                    <p class="font-sans">Where to buy our cakes?</p>
+                    <svg
+                      width="30px"
+                      height="30px"
+                      viewBox="0 0 192 192"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          fill="#fafafa"
+                          fill-rule="evenodd"
+                          d="M55.087 40H83c13.807 0 25 11.193 25 25S96.807 90 83 90H52c-.335 0-.668-.007-1-.02V158a6 6 0 0 0 6 6h9a6 6 0 0 0 6-6v-18a6 6 0 0 1 6-6h24a6 6 0 0 1 6 6v18a6 6 0 0 0 6 6h9a6 6 0 0 0 6-6V54c0-14.36-11.641-26-26-26H77c-9.205 0-17.292 4.783-21.913 12ZM39 86.358C31.804 81.97 27 74.046 27 65c0-9.746 5.576-18.189 13.712-22.313C45.528 27.225 59.952 16 77 16h26c16.043 0 29.764 9.942 35.338 24H147c9.941 0 18 8.059 18 18v65c0 9.941-8.059 18-18 18h-6v17c0 9.941-8.059 18-18 18h-9c-9.941 0-18-8.059-18-18v-12H84v12c0 9.941-8.059 18-18 18h-9c-9.941 0-18-8.059-18-18V86.358ZM141 129h6a6 6 0 0 0 6-6V58a6 6 0 0 0-6-6h-6.052c.035.662.052 1.33.052 2v75ZM52 52c-7.18 0-13 5.82-13 13s5.82 13 13 13h31c7.18 0 13-5.82 13-13s-5.82-13-13-13H52Z"
+                          clip-rule="evenodd"
+                        />
+                      </g>
+                    </svg>
+                  </label>
+                  <div
+                    class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                  >
+                    <div>
+                      <div class="w-full">
+                        <img class="m-auto" src="/map.png" alt="" />
+                      </div>
+
+                      <div class="w-full">
+                        <div class="flex justify-evenly">
+                          <ul class="font-sans">
+                            <li>Germany (55)</li>
+                            <li>England (62)</li>
+                            <li>Russia (32)</li>
+                            <li>Denmark (25)</li>
+                          </ul>
+
+                          <ul class="font-sans">
+                            <li>France (25)</li>
+                            <li>Canada (69)</li>
+                            <li>Africa (25)</li>
+                            <li>Finland (85)</li>
+                          </ul>
+
+                          <ul class="font-sans">
+                            <li>Italy (34)</li>
+                            <li>Brazil (25)</li>
+                            <li>USA (20)</li>
+                            <li>India (1)</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion Item 2 -->
+                <div>
+                  <input
+                    type="checkbox"
+                    id="accordion-item-13"
+                    class="hidden"
+                  />
+                  <label
+                    for="accordion-item-13"
+                    class="flex justify-around cursor-pointer text-lg font-semibold text-white p-4 bg-blue-300 rounded-md"
+                  >
+                    <svg
+                      width="25px"
+                      height="25px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M23 4C23 2.34315 21.6569 1 20 1H4C2.34315 1 1 2.34315 1 4V20C1 21.6569 2.34315 23 4 23H20C21.6569 23 23 21.6569 23 20V4ZM21 4C21 3.44772 20.5523 3 20 3H4C3.44772 3 3 3.44772 3 4V20C3 20.5523 3.44772 21 4 21H20C20.5523 21 21 20.5523 21 20V4Z"
+                          fill="#fafafa"
+                        />
+                        <path
+                          d="M16 8C16 10.2091 14.2091 12 12 12C9.79086 12 8 10.2091 8 8C8 5.79086 9.79086 4 12 4C14.2091 4 16 5.79086 16 8ZM9.97716 8C9.97716 9.11719 10.8828 10.0228 12 10.0228C13.1172 10.0228 14.0228 9.11719 14.0228 8C14.0228 6.88281 13.1172 5.97716 12 5.97716C10.8828 5.97716 9.97716 6.88281 9.97716 8Z"
+                          fill="#fafafa"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M5.39909 16.6808C6.49015 13.8286 9.47114 13 12 13C14.5289 13 17.5099 13.8286 18.6009 16.6808C18.9505 17.5948 18.6826 18.4756 18.1363 19.0778C17.6103 19.6576 16.8215 20 16 20H8C7.17849 20 6.38973 19.6576 5.86372 19.0778C5.31737 18.4756 5.04947 17.5948 5.39909 16.6808ZM12 15C9.72346 15 7.89905 15.7433 7.26709 17.3954C7.21826 17.523 7.25506 17.6349 7.34496 17.734C7.47492 17.8772 7.71694 18 8 18H16C16.2831 18 16.5251 17.8772 16.655 17.734C16.7449 17.6349 16.7817 17.523 16.7329 17.3954C16.101 15.7433 14.2765 15 12 15Z"
+                          fill="#fafafa"
+                        />
+                      </g>
+                    </svg>
+                    <p class="text-[15px] font-bold sm:text-lg font-sans">
+                      Become Our certified dealer
+                    </p>
+                    <svg
+                      width="30px"
+                      height="30px"
+                      viewBox="0 0 192 192"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          fill="#fafafa"
+                          fill-rule="evenodd"
+                          d="M55.087 40H83c13.807 0 25 11.193 25 25S96.807 90 83 90H52c-.335 0-.668-.007-1-.02V158a6 6 0 0 0 6 6h9a6 6 0 0 0 6-6v-18a6 6 0 0 1 6-6h24a6 6 0 0 1 6 6v18a6 6 0 0 0 6 6h9a6 6 0 0 0 6-6V54c0-14.36-11.641-26-26-26H77c-9.205 0-17.292 4.783-21.913 12ZM39 86.358C31.804 81.97 27 74.046 27 65c0-9.746 5.576-18.189 13.712-22.313C45.528 27.225 59.952 16 77 16h26c16.043 0 29.764 9.942 35.338 24H147c9.941 0 18 8.059 18 18v65c0 9.941-8.059 18-18 18h-6v17c0 9.941-8.059 18-18 18h-9c-9.941 0-18-8.059-18-18v-12H84v12c0 9.941-8.059 18-18 18h-9c-9.941 0-18-8.059-18-18V86.358ZM141 129h6a6 6 0 0 0 6-6V58a6 6 0 0 0-6-6h-6.052c.035.662.052 1.33.052 2v75ZM52 52c-7.18 0-13 5.82-13 13s5.82 13 13 13h31c7.18 0 13-5.82 13-13s-5.82-13-13-13H52Z"
+                          clip-rule="evenodd"
+                        />
+                      </g>
+                    </svg>
+                  </label>
+                  <div
+                    class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                  >
+                    <div class="w-full">
+                      <div class="flex justify-between w-full p-4">
+                        <div class="w-2/5">
+                          <img
+                            class="w-full"
+                            src="/cupcake-candle.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="w-[55%] pr-2">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ducimus esse enim iste alias Lorem ipsum dolor
+                          sit amet, consectetur sit amet consectetur adipisicing
+                          elit.
+                        </div>
+                      </div>
+
+                      <div class="-mt-7 p-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quaerat adipisci optio veritatis deleniti est aut nam
+                        doloribus? Praesentium cupiditate, sint voluptates
+                        numquam corrupti accusantium deleniti non labore
+                        doloribus sequi natus.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion Item 3 -->
+                <div>
+                  <input type="checkbox" id="accordion-item-3" class="hidden" />
+                  <label
+                    for="accordion-item-3"
+                    class="flex justify-around cursor-pointer text-lg font-semibold text-white p-4 bg-blue-300 rounded-md"
+                  >
+                    <svg
+                      version="1.1"
+                      id="_x32_"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="25px"
+                      height="25px"
+                      viewBox="0 0 512 512"
+                      xml:space="preserve"
+                      fill="#000000"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <g id="SVGRepo_iconCarrier">
+                        <style type="text/css">
+                          .st0 {
+                            fill: #fafafa;
+                          }
+                        </style>
+                        <g>
+                          <path
+                            class="st0"
+                            d="M261.031,153.484h-5.375v7.484h5.375c1.25,0,2.266-0.344,3-1.031c0.766-0.688,1.156-1.594,1.156-2.719 c0-1.109-0.391-2-1.156-2.703C263.297,153.828,262.281,153.484,261.031,153.484z"
+                          />
+                          <path
+                            class="st0"
+                            d="M140.75,169.141c0.141-0.391,0.281-0.891,0.344-1.453c0.094-0.578,0.141-1.266,0.172-2.078 c0.031-0.797,0.031-1.766,0.031-2.891c0-1.109,0-2.063-0.031-2.875s-0.078-1.5-0.172-2.078c-0.063-0.578-0.203-1.047-0.344-1.453 c-0.156-0.406-0.375-0.75-0.641-1.078c-0.953-1.172-2.359-1.75-4.266-1.75H131.5v18.484h4.344c1.906,0,3.313-0.594,4.266-1.75 C140.375,169.891,140.594,169.531,140.75,169.141z"
+                          />
+                          <path
+                            class="st0"
+                            d="M88.219,159.938c0.75-0.688,1.141-1.594,1.141-2.719c0-1.109-0.391-2-1.141-2.703 c-0.75-0.688-1.75-1.031-3.016-1.031h-5.375v7.484h5.375C86.469,160.969,87.469,160.625,88.219,159.938z"
+                          />
+                          <polygon
+                            class="st0"
+                            points="229.875,167.219 237.141,167.219 233.563,156.906 "
+                          />
+                          <path
+                            class="st0"
+                            d="M466.656,88H45.344C20.313,88,0,108.313,0,133.344v245.313C0,403.688,20.313,424,45.344,424h421.313 C491.688,424,512,403.688,512,378.656V133.344C512,108.313,491.688,88,466.656,88z M435.656,138.313 c12.344,0,22.344,10,22.344,22.344S448,183,435.656,183s-22.344-10-22.344-22.344S423.313,138.313,435.656,138.313z M375.875,138.313c12.344,0,22.344,10,22.344,22.344S388.219,183,375.875,183s-22.344-10-22.344-22.344 S363.531,138.313,375.875,138.313z M276.781,148.531h10.547c2,0,3.703,0.344,5.141,1c1.406,0.672,2.625,1.719,3.688,3.156 c0.438,0.609,0.781,1.25,1.031,1.938c0.266,0.672,0.469,1.406,0.563,2.219s0.188,1.703,0.203,2.672 c0.031,0.969,0.047,2.047,0.047,3.203c0,1.172-0.016,2.25-0.047,3.219c-0.016,0.969-0.109,1.844-0.203,2.656 s-0.297,1.563-0.563,2.234c-0.25,0.672-0.594,1.328-1.031,1.938c-1.063,1.422-2.281,2.484-3.688,3.141 c-1.438,0.672-3.141,1-5.141,1h-10.547V148.531z M197.391,159.063c0.047-1.094,0.156-2.094,0.328-3.016 c0.188-0.922,0.469-1.766,0.859-2.516c0.406-0.781,0.969-1.531,1.703-2.25c1.016-0.938,2.156-1.688,3.406-2.203 c1.266-0.516,2.75-0.766,4.438-0.766c2.734,0,5.063,0.75,7,2.25s3.156,3.719,3.703,6.703H213c-0.281-1.172-0.813-2.141-1.594-2.891 s-1.875-1.125-3.281-1.125c-0.781,0-1.5,0.125-2.109,0.391c-0.625,0.266-1.125,0.625-1.547,1.078c-0.281,0.281-0.5,0.625-0.672,1 s-0.328,0.844-0.438,1.438c-0.109,0.578-0.203,1.313-0.234,2.203c-0.063,0.891-0.094,2.016-0.094,3.359 c0,1.359,0.031,2.484,0.094,3.375c0.031,0.891,0.125,1.625,0.234,2.219c0.109,0.563,0.266,1.063,0.438,1.422 c0.172,0.375,0.391,0.703,0.672,1c0.422,0.453,0.922,0.797,1.547,1.078c0.609,0.25,1.328,0.391,2.109,0.391 c1.406,0,2.531-0.375,3.297-1.141c0.797-0.75,1.328-1.719,1.625-2.875h5.781c-0.547,2.969-1.766,5.203-3.703,6.703 c-1.938,1.516-4.266,2.266-7,2.266c-1.688,0-3.172-0.281-4.438-0.781c-1.25-0.531-2.391-1.266-3.406-2.219 c-0.734-0.719-1.297-1.469-1.703-2.219c-0.391-0.781-0.672-1.625-0.859-2.531c-0.172-0.922-0.281-1.938-0.328-3.016 c-0.031-1.094-0.063-2.313-0.063-3.672C197.328,161.375,197.359,160.156,197.391,159.063z M163.172,148.531h20.969v4.953h-7.625 v23.422h-5.703v-23.422h-7.641V148.531z M152.844,148.531h5.688v28.375h-5.688V148.531z M125.797,148.531h10.547 c2,0,3.688,0.344,5.125,1c1.422,0.672,2.656,1.719,3.688,3.156c0.438,0.609,0.781,1.25,1.047,1.938 c0.266,0.672,0.453,1.406,0.563,2.219s0.172,1.703,0.203,2.672s0.031,2.047,0.031,3.203c0,1.172,0,2.25-0.031,3.219 s-0.094,1.844-0.203,2.656s-0.297,1.563-0.563,2.234s-0.609,1.328-1.047,1.938c-1.031,1.422-2.266,2.484-3.688,3.141 c-1.438,0.672-3.125,1-5.125,1h-10.547V148.531z M100.969,148.531h19.219v4.953h-13.531v6.641h11.531v4.953h-11.531v6.891h13.531 v4.938h-19.219V148.531z M74.125,148.531h11.453c1.484,0,2.797,0.25,3.969,0.703c1.172,0.469,2.172,1.094,3,1.875 s1.453,1.703,1.859,2.75c0.438,1.047,0.656,2.172,0.656,3.359c0,1.016-0.156,1.922-0.438,2.719c-0.297,0.797-0.688,1.5-1.156,2.125 c-0.5,0.625-1.063,1.156-1.719,1.594c-0.641,0.438-1.313,0.781-2.031,1.016l6.531,12.234h-6.625l-5.688-11.313h-4.109v11.313 h-5.703V148.531z M60.344,285.75v-21.875h33.25v21.875H60.344z M93.594,292.75v23.625H75.219c-8.219,0-14.875-6.656-14.875-14.875 v-8.75H93.594z M60.344,256.875V235h33.25v21.875H60.344z M60.344,228v-8.75c0-8.219,6.656-14.875,14.875-14.875h18.375V228H60.344 z M47.688,162.719c0-1.344,0.031-2.563,0.063-3.656c0.047-1.094,0.156-2.094,0.344-3.016c0.172-0.922,0.469-1.766,0.844-2.516 c0.406-0.781,0.969-1.531,1.719-2.25c1-0.938,2.125-1.688,3.406-2.203c1.25-0.516,2.734-0.766,4.422-0.766 c2.734,0,5.078,0.75,7.016,2.25c1.922,1.5,3.141,3.719,3.688,6.703h-5.813c-0.297-1.172-0.828-2.141-1.594-2.891 c-0.781-0.75-1.875-1.125-3.297-1.125c-0.797,0-1.484,0.125-2.109,0.391s-1.125,0.625-1.531,1.078c-0.281,0.281-0.5,0.625-0.688,1 c-0.172,0.375-0.313,0.844-0.438,1.438c-0.109,0.578-0.188,1.313-0.234,2.203s-0.078,2.016-0.078,3.359 c0,1.359,0.031,2.484,0.078,3.375s0.125,1.625,0.234,2.219c0.125,0.563,0.266,1.063,0.438,1.422c0.188,0.375,0.406,0.703,0.688,1 c0.406,0.453,0.906,0.797,1.531,1.078c0.625,0.25,1.313,0.391,2.109,0.391c1.422,0,2.531-0.375,3.297-1.141 c0.797-0.75,1.328-1.719,1.625-2.875h5.781c-0.547,2.969-1.766,5.203-3.688,6.703c-1.938,1.516-4.281,2.266-7.016,2.266 c-1.688,0-3.172-0.281-4.422-0.781c-1.281-0.531-2.406-1.266-3.406-2.219c-0.75-0.719-1.313-1.469-1.719-2.219 c-0.375-0.781-0.672-1.625-0.844-2.531c-0.188-0.922-0.297-1.938-0.344-3.016C47.719,165.297,47.688,164.078,47.688,162.719z M128,370.656H48v-16h80V370.656z M132.094,228v7v9.031v0.594v12.25v7v9.625v5.531v6.719v7v13.406v10.219h-31.5v-10.219V292.75v-7 v-6.719V273.5v-9.625v-7v-12.25v-0.594V235v-7v-7.594v-16.031h18.375h13.125h5.25h16.625h3.484c8.219,0,14.891,6.656,14.891,14.875 V228h-18.375h-16.625H132.094z M139.094,256.875V235h33.25v21.875H139.094z M172.344,263.875v21.875h-33.25v-21.875H172.344z M139.094,316.375V292.75h33.25v8.75c0,8.219-6.672,14.875-14.891,14.875H139.094z M240,370.656h-80v-16h80V370.656z M240.375,176.906l-1.719-5.016h-10.375l-1.781,5.016h-5.938l10.625-28.375h4.469l10.688,28.375H240.375z M259.75,165.594h-4.094 v11.313h-5.703v-28.375h11.453c1.469,0,2.797,0.25,3.969,0.703c1.172,0.469,2.172,1.094,3,1.875 c0.813,0.781,1.438,1.703,1.859,2.75c0.438,1.047,0.641,2.172,0.641,3.359c0,1.016-0.141,1.922-0.438,2.719 c-0.281,0.797-0.672,1.5-1.156,2.125c-0.5,0.625-1.063,1.156-1.703,1.594s-1.328,0.781-2.047,1.016l6.531,12.234h-6.609 L259.75,165.594z M352,370.656h-80v-16h80V370.656z M464,370.656h-80v-16h80V370.656z M464,322.656H304v-16h160V322.656z"
+                          />
+                          <path
+                            class="st0"
+                            d="M291.75,169.141c0.125-0.391,0.266-0.891,0.344-1.453c0.078-0.578,0.125-1.266,0.156-2.078 c0.031-0.797,0.031-1.766,0.031-2.891c0-1.109,0-2.063-0.031-2.875s-0.078-1.5-0.156-2.078s-0.219-1.047-0.344-1.453 c-0.156-0.406-0.375-0.75-0.656-1.078c-0.938-1.172-2.375-1.75-4.266-1.75h-4.344v18.484h4.344c1.891,0,3.328-0.594,4.266-1.75 C291.375,169.891,291.594,169.531,291.75,169.141z"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                    <p class="font-sans">Get Your Discount</p>
+                    <svg
+                      width="30px"
+                      height="30px"
+                      viewBox="0 0 192 192"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          fill="#fafafa"
+                          fill-rule="evenodd"
+                          d="M55.087 40H83c13.807 0 25 11.193 25 25S96.807 90 83 90H52c-.335 0-.668-.007-1-.02V158a6 6 0 0 0 6 6h9a6 6 0 0 0 6-6v-18a6 6 0 0 1 6-6h24a6 6 0 0 1 6 6v18a6 6 0 0 0 6 6h9a6 6 0 0 0 6-6V54c0-14.36-11.641-26-26-26H77c-9.205 0-17.292 4.783-21.913 12ZM39 86.358C31.804 81.97 27 74.046 27 65c0-9.746 5.576-18.189 13.712-22.313C45.528 27.225 59.952 16 77 16h26c16.043 0 29.764 9.942 35.338 24H147c9.941 0 18 8.059 18 18v65c0 9.941-8.059 18-18 18h-6v17c0 9.941-8.059 18-18 18h-9c-9.941 0-18-8.059-18-18v-12H84v12c0 9.941-8.059 18-18 18h-9c-9.941 0-18-8.059-18-18V86.358ZM141 129h6a6 6 0 0 0 6-6V58a6 6 0 0 0-6-6h-6.052c.035.662.052 1.33.052 2v75ZM52 52c-7.18 0-13 5.82-13 13s5.82 13 13 13h31c7.18 0 13-5.82 13-13s-5.82-13-13-13H52Z"
+                          clip-rule="evenodd"
+                        />
+                      </g>
+                    </svg>
+                  </label>
+                  <div
+                    class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                  >
+                    <div>
+                      <div class="mt-5">
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Assumenda ipsum veritatis et quasi doloremque.
+                          Dicta consectetur amet soluta sit voluptatibus
+                          tempora, corrupti harum odio recusandae similique
+                          deleniti. Aspernatur, voluptatum explicabo?
+                        </p>
+                      </div>
+                      <br />
+                      <div>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit.
+                        </p>
+                      </div>
+                      <br />
+                      <div>
+                        <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Quia incidunt mollitia repellendus optio
+                          deserunt atque necessitatibus magnam accusantium
+                          nostrum iste, eveniet consectetur
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Cakes section-->
+
+    <div class="cards2 w-full mt-20">
+      <div
+        class="cake-group grid grid-cols-1 w-full md:grid justify-items-center md:grid-cols-2 gap-y-20 lg:grid lg:grid-cols-4 m-auto lg:items-center lg:gap-24 lg:w-[90%] lg: text-center"
+      >
+        <div id="cake1" class="cake">
+          <div class="main-parent">
+            <div class="image">
+              <img src="/vegan-pie.jpg" alt="" />
+              <div class="content2">
+                <h1>Cupcakes</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="cake2" class="cake">
+          <div class="main-parent">
+            <div class="image">
+              <img src="/lemon-cake.jpg" alt="" />
+              <div class="content2">
+                <h1>Cupcakes</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="cake3" class="cake">
+          <div class="main-parent">
+            <div class="image">
+              <img src="/weddingcake.jpg" alt="" />
+              <div class="content2">
+                <h1>Cupcakes</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="cake4" class="cake">
+          <div class="main-parent">
+            <div class="image">
+              <img src="/lemon-cake.jpg" alt="" />
+              <div class="content2">
+                <h1>Cupcakes</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="professional m-auto">
+      <div class="flex w-full h-auto justify-center mt-16">
+        <div class="w-9/12">
+          <div class="flex justify-center">
+            <img src="/cupcake.jpg" alt="" />
+          </div>
+          <h2 class="mt-8 text-center text-3xl">
+            We are professional at our skills
+          </h2>
+          <p class="mt-8 text-center font-sans text-xl">
+            More than 2000+ customers trusted us
+          </p>
+        </div>
+      </div>
+
+      <div class="py-24">
+        <div class="mx-auto px-6 lg:px-8">
+          <div
+            class="grid grid-cols-1 gap-x-8 gap-y-16 text-center md:grid-cols-4"
+          >
+            <div class="mx-auto flex flex-col gap-y-4">
+              <div
+                class="text-5xl font-semibold font-sans text-cyan-500 sm:text-8xl"
+              >
+                53+
+              </div>
+              <div class="text-base/7 font-sans font-bold">
+                Years of Experience
+              </div>
+            </div>
+
+            <div class="mx-auto flex flex-col gap-y-4">
+              <div
+                class="text-5xl font-semibold font-sans text-cyan-500 sm:text-8xl"
+              >
+                102
+              </div>
+              <div class="text-base/7 font-sans font-bold">Awards win</div>
+            </div>
+
+            <div class="mx-auto flex flex-col gap-y-4">
+              <div
+                class="text-5xl font-semibold font-sans text-cyan-500 sm:text-8xl"
+              >
+                30k
+              </div>
+              <div class="text-base/7 font-sans font-bold">Happy Clients</div>
+            </div>
+
+            <div class="mx-auto flex flex-col gap-y-4">
+              <div
+                class="text-5xl font-semibold font-sans text-cyan-500 sm:text-8xl"
+              >
+                99
+              </div>
+              <div class="text-base/7 font-sans font-bold">
+                Perfect Products
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full">
+      <div class="w-[90%] grid lg:flex justify-around m-auto">
+        <div class="w-full lg:w-[50%]">
+          <img src="/bg-image.jpg" alt="" />
+        </div>
+        <div class="w-full lg:w-[50%] bg-cyan-500">
+          <div
+            class="grid text-white grid-cols-1 justify-items-center mt-3 overflow-hidden"
+          >
+            <h1 class="text-2xl">Limited time offer</h1>
+            <p class="font-sans text-xl">Wedding cake sale!</p>
+
+            <div class="mt-5">
+              <img src="/pancakes.png" alt="" />
+            </div>
+
+            <p class="font-sans mt-5 w-[90%] text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              inventore voluptate consectetur laboriosam.
+            </p>
+
+            <button
+              class="font-sans mb-3 lg: mt-7 pr-4 pl-4 pt-3 pb-3 rounded-xl bg-cyan-900"
+            >
+              GET NOW
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rotate">
+      <div class="rotate-main w-full mb-20 mt-20">
+        <div
+          class="rotate-main-child grid-cols-2 gap-x-4 gap-y-6 sm:grid-cols-3 grid md:grid-cols-6 m-auto justify-items-center w-[95%]"
+        >
+          <div class="imgg w-36">
+            <img src="/bakery.jpg" alt="" />
+          </div>
+
+          <div class="imgg w-36">
+            <img src="/bakery2.jpg" alt="" />
+          </div>
+
+          <div class="imgg w-36">
+            <img src="/bakery3.jpg" alt="" />
+          </div>
+
+          <div class="imgg w-36">
+            <img src="/bakery.jpg" alt="" />
+          </div>
+
+          <div class="imgg w-36">
+            <img src="/bakery2.jpg" alt="" />
+          </div>
+
+          <div class="imgg w-36">
+            <img src="/bakery3.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <div class="grid justify-items-center">
+          <img src="/cupcake.jpg" alt="" />
+          <p class="text-4xl mt-5">From the blog</p>
+          <p class="font-sans text-xl mt-5 font-light">
+            Latest news and updates
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card4">
+      <div class="main-parent-card4">
+        <div
+          class="main-child-card4 grid justify-items-center sm:flex justify-around gap-5 m-auto w-[90%]"
+        >
+          <div
+            class="item-1 my-6 bg-white shadow-sm border border-slate-200 rounded-lg"
+          >
+            <div class="content4">
+              <div class="img-container w-full h-52" id="img-1"></div>
+
+              <div class="p-6">
+                <h5 class="mb-2 text-slate-800 text-xl font-semibold">
+                  Understand the background of bakery now
+                </h5>
+                <div class="flex gap-3">
+                  <div>
+                    <svg
+                      width="25px"
+                      height="25px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          opacity="0.5"
+                          d="M4 11.5V5.71231C4 5.05041 4 4.71946 4.05548 4.44379C4.29971 3.23023 5.31225 2.28098 6.60671 2.05201C6.90076 2 7.25377 2 7.9598 2C8.26914 2 8.42381 2 8.57246 2.01303C9.21332 2.06921 9.82122 2.30528 10.3168 2.69039C10.4317 2.77971 10.5411 2.88224 10.7598 3.08731L11.2 3.5C11.8526 4.11183 12.1789 4.41775 12.5697 4.62157C12.7844 4.73353 13.012 4.82195 13.2483 4.88508C13.6783 5 14.1398 5 15.0627 5H15.3617C17.4676 5 18.5205 5 19.2049 5.5771C19.2679 5.63018 19.3278 5.68635 19.3844 5.74537C20 6.38701 20 7.37415 20 9.34843V11.5"
+                          stroke="#0635d0"
+                          stroke-width="1.5"
+                        />
+                        <path
+                          opacity="0.5"
+                          d="M10 17H14"
+                          stroke="#0635d0"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M3.47674 17.4839C2.99958 14.7678 2.761 13.4097 3.33908 12.433C3.4866 12.1838 3.66852 11.9582 3.87908 11.7634C4.7042 11 6.0379 11 8.7053 11H15.2947C17.9621 11 19.2958 11 20.1209 11.7634C20.3315 11.9582 20.5134 12.1838 20.6609 12.433C21.239 13.4097 21.0004 14.7678 20.5233 17.4839C20.1798 19.4391 20.008 20.4167 19.4129 21.0655C19.2585 21.2338 19.0858 21.383 18.8982 21.5101C18.175 22 17.2149 22 15.2947 22H8.70531C6.7851 22 5.825 22 5.10183 21.5101C4.9142 21.383 4.74145 21.2338 4.58706 21.0655C3.99198 20.4167 3.82024 19.4391 3.47674 17.4839Z"
+                          stroke="#0635d0"
+                          stroke-width="1.5"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <div>
+                    <p>Cake, Biscuits</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="item-2 my-6 bg-white shadow-sm border border-slate-200 rounded-lg"
+          >
+            <div class="content4">
+              <div class="img-container w-full h-52" id="img-2"></div>
+
+              <div class="p-6">
+                <h5 class="mb-2 text-slate-800 text-xl font-semibold">
+                  Seven Reliable Sources To Learn About Bakery.
+                </h5>
+                <div class="flex gap-3">
+                  <div>
+                    <svg
+                      width="25px"
+                      height="25px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          opacity="0.5"
+                          d="M4 11.5V5.71231C4 5.05041 4 4.71946 4.05548 4.44379C4.29971 3.23023 5.31225 2.28098 6.60671 2.05201C6.90076 2 7.25377 2 7.9598 2C8.26914 2 8.42381 2 8.57246 2.01303C9.21332 2.06921 9.82122 2.30528 10.3168 2.69039C10.4317 2.77971 10.5411 2.88224 10.7598 3.08731L11.2 3.5C11.8526 4.11183 12.1789 4.41775 12.5697 4.62157C12.7844 4.73353 13.012 4.82195 13.2483 4.88508C13.6783 5 14.1398 5 15.0627 5H15.3617C17.4676 5 18.5205 5 19.2049 5.5771C19.2679 5.63018 19.3278 5.68635 19.3844 5.74537C20 6.38701 20 7.37415 20 9.34843V11.5"
+                          stroke="#0635d0"
+                          stroke-width="1.5"
+                        />
+                        <path
+                          opacity="0.5"
+                          d="M10 17H14"
+                          stroke="#0635d0"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M3.47674 17.4839C2.99958 14.7678 2.761 13.4097 3.33908 12.433C3.4866 12.1838 3.66852 11.9582 3.87908 11.7634C4.7042 11 6.0379 11 8.7053 11H15.2947C17.9621 11 19.2958 11 20.1209 11.7634C20.3315 11.9582 20.5134 12.1838 20.6609 12.433C21.239 13.4097 21.0004 14.7678 20.5233 17.4839C20.1798 19.4391 20.008 20.4167 19.4129 21.0655C19.2585 21.2338 19.0858 21.383 18.8982 21.5101C18.175 22 17.2149 22 15.2947 22H8.70531C6.7851 22 5.825 22 5.10183 21.5101C4.9142 21.383 4.74145 21.2338 4.58706 21.0655C3.99198 20.4167 3.82024 19.4391 3.47674 17.4839Z"
+                          stroke="#0635d0"
+                          stroke-width="1.5"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <div>
+                    <p>Cake, Biscuits</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="item-3 my-6 bg-white shadow-sm border border-slate-200 rounded-lg"
+          >
+            <div class="content4">
+              <div class="img-container w-full h-52" id="img-3"></div>
+
+              <div class="p-6">
+                <h5 class="mb-2 text-xl font-semibold">
+                  Ten Places That You Can Find Bakery.
+                </h5>
+                <div class="flex gap-3">
+                  <div>
+                    <svg
+                      width="25px"
+                      height="25px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          opacity="0.5"
+                          d="M4 11.5V5.71231C4 5.05041 4 4.71946 4.05548 4.44379C4.29971 3.23023 5.31225 2.28098 6.60671 2.05201C6.90076 2 7.25377 2 7.9598 2C8.26914 2 8.42381 2 8.57246 2.01303C9.21332 2.06921 9.82122 2.30528 10.3168 2.69039C10.4317 2.77971 10.5411 2.88224 10.7598 3.08731L11.2 3.5C11.8526 4.11183 12.1789 4.41775 12.5697 4.62157C12.7844 4.73353 13.012 4.82195 13.2483 4.88508C13.6783 5 14.1398 5 15.0627 5H15.3617C17.4676 5 18.5205 5 19.2049 5.5771C19.2679 5.63018 19.3278 5.68635 19.3844 5.74537C20 6.38701 20 7.37415 20 9.34843V11.5"
+                          stroke="#0635d0"
+                          stroke-width="1.5"
+                        />
+                        <path
+                          opacity="0.5"
+                          d="M10 17H14"
+                          stroke="#0635d0"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M3.47674 17.4839C2.99958 14.7678 2.761 13.4097 3.33908 12.433C3.4866 12.1838 3.66852 11.9582 3.87908 11.7634C4.7042 11 6.0379 11 8.7053 11H15.2947C17.9621 11 19.2958 11 20.1209 11.7634C20.3315 11.9582 20.5134 12.1838 20.6609 12.433C21.239 13.4097 21.0004 14.7678 20.5233 17.4839C20.1798 19.4391 20.008 20.4167 19.4129 21.0655C19.2585 21.2338 19.0858 21.383 18.8982 21.5101C18.175 22 17.2149 22 15.2947 22H8.70531C6.7851 22 5.825 22 5.10183 21.5101C4.9142 21.383 4.74145 21.2338 4.58706 21.0655C3.99198 20.4167 3.82024 19.4391 3.47674 17.4839Z"
+                          stroke="#0635d0"
+                          stroke-width="1.5"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <div>
+                    <p>Cake, Biscuits</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Footer section-->
+
+    <footer>
+      <div class="footer1 relative mt-12">
+        <div class="footer1-main-child w-full">
+          <div
+            class="footer1-main-content mt-3 justify-center p-11 w-full grid grid-cols-1 gap-3 m-auto sm:grid sm:grid-cols-2 sm:gap-7 lg:grid lg:grid-cols-4 lg:mt-20 lg:w-[90%] lg:m-auto text-white"
+          >
+            <div class="contact-us">
+              <div class="text-xl border-b-white border-b-2 pb-3 w-[50%]">
+                Contact-Us
+              </div>
+
+              <!-- Items -->
+              <div class="flex items-center gap-3 mt-9">
+                <div
+                  style="
+                    background-color: rgb(255, 255, 255);
+                    border-radius: 50px;
+                    padding: 5px;
+                  "
+                >
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                        stroke="#008cfa"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                        stroke="#008cfa"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <p class="font-sans">Baccor City , Manila</p>
+              </div>
+
+              <div class="flex items-center gap-3 mt-3">
+                <div
+                  style="
+                    background-color: white;
+                    border-radius: 50px;
+                    padding: 5px;
+                  "
+                >
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.73268 2.043C6.95002 0.832583 8.95439 1.04804 9.9737 2.40962L11.2347 4.09402C12.0641 5.20191 11.9909 6.75032 11.0064 7.72923L10.7676 7.96665C10.7572 7.99694 10.7319 8.09215 10.76 8.2731C10.8232 8.6806 11.1635 9.545 12.592 10.9654C14.02 12.3853 14.8905 12.7253 15.3038 12.7887C15.4911 12.8174 15.5891 12.7906 15.6194 12.78L16.0274 12.3743C16.9026 11.5041 18.2475 11.3414 19.3311 11.9305L21.2416 12.9691C22.8775 13.8584 23.2909 16.0821 21.9505 17.4148L20.53 18.8273C20.0824 19.2723 19.4805 19.6434 18.7459 19.7119C16.9369 19.8806 12.7187 19.6654 8.28659 15.2584C4.14868 11.144 3.35462 7.556 3.25415 5.78817L4.00294 5.74562L3.25415 5.78817C3.20335 4.89426 3.62576 4.13796 4.16308 3.60369L5.73268 2.043ZM8.77291 3.30856C8.26628 2.63182 7.322 2.57801 6.79032 3.10668L5.22072 4.66737C4.8908 4.99542 4.73206 5.35695 4.75173 5.70307C4.83156 7.10766 5.47286 10.3453 9.34423 14.1947C13.4057 18.2331 17.1569 18.3536 18.6067 18.2184C18.9029 18.1908 19.1975 18.0369 19.4724 17.7636L20.8929 16.3511C21.4704 15.777 21.343 14.7315 20.5252 14.2869L18.6147 13.2484C18.0871 12.9616 17.469 13.0562 17.085 13.438L16.6296 13.8909L16.1008 13.359C16.6296 13.8909 16.6289 13.8916 16.6282 13.8923L16.6267 13.8937L16.6236 13.8967L16.6171 13.903L16.6025 13.9166C16.592 13.9262 16.5799 13.9367 16.5664 13.948C16.5392 13.9705 16.5058 13.9959 16.4659 14.0227C16.3858 14.0763 16.2801 14.1347 16.1472 14.1841C15.8764 14.285 15.5192 14.3392 15.0764 14.2713C14.2096 14.1384 13.0614 13.5474 11.5344 12.0291C10.0079 10.5113 9.41194 9.36834 9.2777 8.50306C9.20906 8.06061 9.26381 7.70331 9.36594 7.43225C9.41599 7.29941 9.47497 7.19378 9.5291 7.11389C9.5561 7.07405 9.58179 7.04074 9.60446 7.01368C9.6158 7.00015 9.6264 6.98817 9.63604 6.9777L9.64977 6.96312L9.65606 6.95666L9.65905 6.95363L9.66051 6.95217C9.66122 6.95146 9.66194 6.95075 10.1908 7.48258L9.66194 6.95075L9.94875 6.66556C10.3774 6.23939 10.4374 5.53194 10.0339 4.99297L8.77291 3.30856Z"
+                        fill="#1c8cfa"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <p class="font-sans">0800-123456</p>
+              </div>
+
+              <div class="flex items-center gap-3 mt-3">
+                <div
+                  style="
+                    background-color: white;
+                    border-radius: 50px;
+                    padding: 5px;
+                  "
+                >
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M11 18H13M9.2 21H14.8C15.9201 21 16.4802 21 16.908 20.782C17.2843 20.5903 17.5903 20.2843 17.782 19.908C18 19.4802 18 18.9201 18 17.8V6.2C18 5.0799 18 4.51984 17.782 4.09202C17.5903 3.71569 17.2843 3.40973 16.908 3.21799C16.4802 3 15.9201 3 14.8 3H9.2C8.0799 3 7.51984 3 7.09202 3.21799C6.71569 3.40973 6.40973 3.71569 6.21799 4.09202C6 4.51984 6 5.07989 6 6.2V17.8C6 18.9201 6 19.4802 6.21799 19.908C6.40973 20.2843 6.71569 20.5903 7.09202 20.782C7.51984 21 8.07989 21 9.2 21Z"
+                        stroke="#008cfa"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <p class="font-sans">(+91) 0800-123456</p>
+              </div>
+
+              <div class="flex items-center gap-3 mt-3">
+                <div
+                  style="
+                    background-color: white;
+                    border-radius: 50px;
+                    padding: 5px;
+                  "
+                >
+                  <svg
+                    fill="#008cfa"
+                    width="25px"
+                    height="25px"
+                    viewBox="0 0 1920 1920"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M0 1694.235h1920V226H0v1468.235ZM112.941 376.664V338.94H1807.06v37.723L960 1111.233l-847.059-734.57ZM1807.06 526.198v950.513l-351.134-438.89-88.32 70.475 378.353 472.998H174.042l378.353-472.998-88.32-70.475-351.134 438.89V526.198L960 1260.768l847.059-734.57Z"
+                        fill-rule="evenodd"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <p class="font-sans">Baccor City , Manila</p>
+              </div>
+            </div>
+
+            <!--Recent post section-->
+            <div>
+              <div class="w-[75%] text-xl border-b-white border-b-2 pb-3">
+                Recent Post
+              </div>
+
+              <div class="flex items-center gap-3 mt-9">
+                <div class="w-28">
+                  <img class="rounded-lg" src="/lemon-cake.jpg" alt="" />
+                </div>
+                <div>
+                  <p class="text-xl">The Background Of bakery</p>
+                  <div class="flex items-center gap-2">
+                    <svg
+                      width="15px"
+                      height="15px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                          stroke="#008cfa"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12 6V12"
+                          stroke="#008cfa"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16.24 16.24L12 12"
+                          stroke="#008cfa"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                    </svg>
+                    <p class="font-sans">March 25 2020</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3 mt-5">
+                <div class="w-28">
+                  <img class="rounded-lg" src="/lemon-cake.jpg" alt="" />
+                </div>
+                <div>
+                  <p class="text-xl">The Background Of bakery</p>
+                  <div class="flex items-center gap-2">
+                    <svg
+                      width="15px"
+                      height="15px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                          stroke="#008cfa"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12 6V12"
+                          stroke="#008cfa"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16.24 16.24L12 12"
+                          stroke="#008cfa"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                    </svg>
+                    <p class="font-sans">March 25 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Quick Links-->
+            <div>
+              <div class="w-[75%] text-xl border-b-white border-b-2 pb-3">
+                Quick links
+              </div>
+
+              <div>
+                <ul class="grid grid-cols-2 gap-3 mt-9">
+                  <li><a href="">> Home</a></li>
+                  <li><a href="">> Menu</a></li>
+                  <li><a href="">> Blog</a></li>
+                  <li><a href="">> Contact</a></li>
+                  <li><a href="">> Calendar</a></li>
+                  <li><a href="">> About</a></li>
+                  <li><a href="">> FAQ</a></li>
+                  <li><a href="">> Shop</a></li>
+                  <li><a href="">> Team</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Opening Hours-->
+            <div>
+              <div class="w-[75%] text-xl border-b-white border-b-2 pb-3">
+                Opening Hours
+              </div>
+
+              <div class="font-sans mt-9">
+                Our support available to help you 24 hours a day, seven days a
+                week.
+
+                <div class="grid grid-cols-2 mt-5">
+                  <p>Monday to Friday</p>
+                  <p>7AM - 5PM</p>
+                </div>
+                <div class="grid grid-cols-2 mt-2">
+                  <p>Saturday</p>
+                  <p>10AM - 5PM</p>
+                </div>
+                <div class="grid grid-cols-2 mt-2">
+                  <p>Sunday</p>
+                  <p>Closed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright w-full">
+      <div class="copyright-main-parent w-full">
+        <div
+          class="copyright-main-child grid grid-cols-1 justify-items-center sm: bg-cyan-400 text-white w-full sm:flex justify-between p-8 bottom-0"
+        >
+          <div class="w-[100%] text-center">
+            Copyright @2021, DesignZone all rights reserved.
+          </div>
+          <div class="flex justify-evenly text-center w-[80%]">
+            <p>About Us</p>
+            <p>|</p>
+            <p>FAQs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
